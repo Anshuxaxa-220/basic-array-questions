@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+         {
+             cin>>arr[i];
+         }
+    int currentmin=arr[0];
+    int currentmax=arr[0];
+    for(int i=0;i<n;i++)
+        {
+            if(arr[i]>currentmax)
+               {
+                   currentmax=arr[i];
+               }
+           if(arr[i]<currentmin)
+             {
+                 currentmin=arr[i];
+             }
+        }
+    cout<<"maximum value "<<currentmax<<endl;
+    cout<<"minum value "<<currentmin<<endl;
+    return 0;
+}
